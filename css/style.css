@@ -1,0 +1,251 @@
+@import url('https://fonts.google.com/specimen/Montserrat?query=monts');
+@import url('https://fonts.google.com/specimen/Abril+Fatface?query=abril&sidebar.open&selection.family=Abril+Fatface');
+*{
+font-family: 'Montserrat';
+}
+
+html{
+
+scroll-behavior: smooth;
+}
+
+body{
+
+    margin: 0 auto;
+
+}
+section.top-pages{
+background: url('../images/bg.jpg');
+height: 80vh;
+background-size: cover;
+padding: 25px;
+
+}
+
+header.header img{
+width: 150px;
+
+}
+
+header.header{
+
+    display: flex;
+    align-items: center;
+  
+}
+
+nav.nav{
+display: flex;
+justify-content: space-between;
+list-style: none;
+ 
+width: 400px;
+margin-left: 30px;
+
+}
+
+nav.nav li a{
+    text-decoration: none;
+color: white;
+}
+
+.landing-page{position: relative;
+ padding: 20px 50px;
+}
+
+.big-title{
+color: white;
+font-family: 'Abril FatFace';
+font-size: 80px;
+font-weight: 100;
+
+
+}
+
+.scroll-down{
+
+color: white;
+text-decoration: none;
+position: absolute;
+bottom: 0;
+}
+
+/*   ----------------Services---------------   */
+
+
+.services{
+display: flex;
+margin: 50px;
+justify-content: space-evenly;
+
+}
+
+.service-item{
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+.delivery-icon{
+font-size: 50px;
+color: #ADD981;
+
+}
+
+.service-details{
+font-weight: 600;
+width: 200px;
+text-align: center;
+}
+
+
+/*   ----------------Nos meilleurs ventes---------------   */
+
+.section-title{
+font-size: 50px;
+font-family: 'Abril FatFace',cursive;
+font-weight: 100;
+position: relative;
+}
+
+.section-title::before{
+content: "";
+position: absolute;
+background-color: #ADD981;
+width: 50px;
+height: 7px;
+bottom: 0;
+}
+
+.best-plants{
+    background-color: red;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.plant-box{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+min-width: 350px;
+height: 500px;
+flex: 1;
+}
+
+.no-grid{
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.bests-items{
+margin: 100px;
+}
+
+
+.plant-details{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.plant-name{
+font-size: 22px;
+font-weight: 600;
+line-height: 3px;
+}
+
+.plant-price{
+color: #ADD981;
+font-size: 14px;
+line-height: 3px;
+font-weight:800 ;
+}
+
+.plant1{
+    background-image: url(../images/nos_meilleures_ventes/1.jpg);
+}
+
+
+.plant2{
+    background-image: url(../images/nos_meilleures_ventes/2.jpg);
+}
+
+
+.plant3{
+    background-image: url(../images/nos_meilleures_ventes/3.jpg);
+}
+
+
+.plant4{
+    background-image: url(../images/nos_meilleures_ventes/4.jpg);
+}
+
+/*---------------Nos plantes---------------------*/
+
+.all-plants{
+margin: 100px;
+}
+
+.plant-grid{
+display: grid;
+min-height: 150vh;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 400px);
+
+
+ 
+}
+
+.plant-grid1{
+
+background-image: url(../images/nos_plantes/1.jpg);
+grid-column: 1/3;
+grid-row: 1/3;
+}
+
+.plant-grid2{
+
+    background-image: url(../images/nos_plantes/2.jpg);
+    grid-column: 3/5;
+    }
+
+.plant-grid3{
+    grid-column: 3/5;
+    background-image: url(../images/nos_plantes/3.jpg);
+  }
+
+.plant-grid4{
+    grid-column: 1;
+    grid-row: 3/5;
+    background-image: url(../images/nos_plantes/4.jpg);
+ }
+
+ .plant-grid5{
+    grid-column: 2/4;
+    grid-row: 3/5;
+    background-image: url(../images/nos_plantes/5.jpg);
+  }
+
+.plant-grid6{
+    grid-column: 4;
+    grid-row: 3/5;
+    background-image: url(../images/nos_plantes/6.jpg);
+ }
+
+/* pied de page */
+
+footer{
+    justify-content:space-between;
+    display: flex;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv{
+text-decoration: none;
+color: black;
+}
